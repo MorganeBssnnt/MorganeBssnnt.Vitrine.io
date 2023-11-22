@@ -1,0 +1,181 @@
+*,:after,:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+body {
+    margin: 0;
+    background-color:#ffc07d;
+    font-family: raustila;
+    line-height: 1.5;
+ }
+ 
+
+/*Header*/
+ .header{
+    display: flex;
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    padding-left: 12px;
+    border-bottom: 1px solid #9c8354;
+    box-shadow: 3px 3px 2px #9e7540;
+    background: #b98847;
+    color: #fff;
+    line-height: 0
+}
+
+/*Sidebar*/
+/*Wrapper*/
+#wrapper {
+    background: #9c8354;
+}
+#sidebar-wrapper {
+    height: 100%;
+    left: 312px;
+    margin-left: -312px;
+    overflow: hidden;
+    position: fixed;
+    top: 72px;
+    transition: .3s cubic-bezier(.25,.46,.45,.94);
+}
+#sidebar-wrapper.newSideWrapper #mainNav>li {
+    background: #b98847;
+    display: grid;
+    font-size: 80%;
+    margin: 0 0 1px -1px;
+    min-height: 88px;
+    transition: background-color .1s ease-in-out 0s;
+    width: 88px;
+}
+.newSideWrapper {
+    background: #b98847;
+    border: none;
+    overflow: visible;
+    width: 88px;
+    box-shadow: 3px 3px 2px #9e7540;
+}
+#wrapper #sidebar-wrapper.newSideWrapper, #wrapper.toggled-2 #sidebar-wrapper.newSideWrapper {
+    background: #9c8354;
+    border: none;
+    overflow: visible;
+    user-select: none;
+    width: 88px;
+}
+#sidebar-wrapper.newSideWrapper .nav-pills>li.active>a, #sidebar-wrapper.newSideWrapper .nav-pills>li.active>a:focus, #sidebar-wrapper.newSideWrapper .nav-pills>li.active>a:hover, #sidebar-wrapper.newSideWrapper .nav-pills>li.active>div.subMenuDropdown, #sidebar-wrapper.newSideWrapper .nav-pills>li.active>div.subMenuDropdown:focus, #sidebar-wrapper.newSideWrapper .nav-pills>li.active>div.subMenuDropdown:hover, #sidebar-wrapper.newSideWrapper a, #sidebar-wrapper.newSideWrapper a:focus, #sidebar-wrapper.newSideWrapper a:hover, #sidebar-wrapper.newSideWrapper div.subMenuDropdown, #sidebar-wrapper.newSideWrapper div.subMenuDropdown:focus, #sidebar-wrapper.newSideWrapper div.subMenuDropdown:hover {
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    height: 100%;
+    line-height: 1.2;
+    padding: 8px;
+    text-align: center;
+    width: 88px;
+}
+
+/*navigation*/
+.sidebar-nav {
+    padding: 0;
+}
+.sidebar-nav li {
+    line-height: 48px;
+    text-indent: 20px;
+}
+.nav-pills {
+    float: left;
+}
+.nav-stacked {
+    float: none;
+}
+
+/*mainNav*/
+#mainNav {
+
+}
+.main-navigation-icon {
+    font-size: 30px;
+    left: 0!important;
+    margin: 8px 0;
+    position: absolute;
+    width: 66px;
+}
+#mainNav_games {
+
+}
+.main-nav-corner {
+    height: 0;
+    position: absolute;
+    width: 0
+}
+.mainN {
+    display: block;
+    left: 3px;
+}
+
+/*subnav*/
+.container-sub-nav {
+    height: 100%;
+    left: 100%;
+    position: absolute;
+    top: -7px;
+    width: 100%;
+}
+
+/*Element styles*/
+.element-style-svg {
+    width: 8px; 
+    height: 8px;
+}
+.element-style-ul {
+    width: 88px;
+}
+
+/*svg*/
+svg {
+    fill: #72552f;
+    position: relative;
+    right: -60px;
+    top: -20px;
+}
+.svg-icon {
+    fill: #ffffff;
+}
+
+/*SubMenu*/
+.subMenuDropdown {
+    display: block;
+    height: 100%;
+    padding: 8px;
+    vertical-align: middle;
+    width: 88px;
+}
+.submenu-button {
+    width: 48px
+}
+.subMenuContainer {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+/*div*/
+div {
+    display: block;
+}
+
+/*ul*/
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin-top: 0;
+}
