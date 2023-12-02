@@ -2,21 +2,32 @@
 <html>
     <head>
         <link href="style.css" rel="stylesheet">
+        <title>Erin Arckanger</title>
     </head>
     <body>
-        <div>
-            <header class="header"></header>
+        <div class="main-navbar-wrapper">
+            <header class="header">
+                <a tabindex="1" href="https://morganebssnnt.github.io/Vitrine/">
+                    <span>
+                        <svg class="svg-icon" width="10em" height="10em" viewBox="0 0 128 32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0001 3.5C12.1742 3.5 12.3358 3.59058 12.4266 3.73912L16.6012 10.5646C16.6748 10.6849 16.6942 10.8308 16.6545 10.9661C16.6148 11.1015 16.5197 11.2138 16.3928 11.2754L12.2182 13.2991C12.0804 13.3659 11.9197 13.3659 11.782 13.2991L7.6074 11.2754C7.48045 11.2138 7.38541 11.1015 7.34571 10.9661C7.30602 10.8308 7.32536 10.6849 7.39897 10.5646L11.5735 3.73912C11.6644 3.59058 11.8259 3.5 12.0001 3.5ZM12.0001 4.95828L8.53971 10.616L12.0001 12.2935L15.4605 10.616L12.0001 4.95828Z"/>
+                        <path d="M12.0001 20.0503C11.8321 20.0503 11.6753 19.966 11.5828 19.8257L7.40813 13.5003C7.28391 13.3121 7.30107 13.064 7.45001 12.8946C7.59896 12.7253 7.84283 12.6766 8.04536 12.7758L12.0001 14.7127L15.9547 12.7758C16.1572 12.6766 16.4011 12.7253 16.55 12.8946C16.699 13.064 16.7161 13.3121 16.5919 13.5003L12.4174 19.8257C12.3248 19.9659 12.1681 20.0503 12.0001 20.0503ZM12.0001 18.6426L14.7465 14.4811L12.22 15.7185C12.0812 15.7864 11.9189 15.7864 11.7801 15.7185L9.25356 14.481L12.0001 18.6426Z"/>
+                        </svg>
+                    </span>
+                    Home
+                </a>
+            </header>
         </div>
         <div id="wrapper">
             <div id="sidebar-wrapper" class="newSideWrapper">
-                <ul class="sidebar-nav nav-pills nav-stacked element-style-ul" id="mainNav">
-                    <li id="mainNav_games">
+                <ul class="sidebar-nav nav-pills nav-stacked" id="mainNav" style="width: 88px;">
+                    <li id="mainNav_news" class="sel-nav-item current">
                         <div class="main-nav-corner">
-                            <svg class="element-style-svg">
+                            <svg class="polygon-style">
                                 <polygon points="0 0 48 0 48 48"></polygon>
                             </svg>
                         </div>
-                        <div class="subMenuDropdown submenu-button">
+                        <div class="subMenuDropdown submenu-button" data-toggle="dropdown">
                             <div class="subMenuContainer">
                                 <span class="mainN">
                                     <svg height="1em" width="1.125em" version="1.1" viewBox="0 0 576 512" class="svg-icon main-navigation-icon">
@@ -26,6 +37,102 @@
                                 News
                             </div>
                         </div>
+                    </li>
+                    <li id="mainNav_showroom" class="sub-menu-open open">
+                        <div class="main-nav-corner">
+                            <svg class="element-style-svg">
+                                <polygon points="0 0 48 0 48 48"></polygon>
+                            </svg>
+                        </div>
+                        <div class="subMenuDropdown submenu-button" data-toggle="dropdown">
+                            <div class="subMenuContainer">
+                                <span class="mainN">
+                                    <svg height="1em" width="1.125em" version="1.1" viewBox="0 0 576 512" class="svg-icon main-navigation-icon">
+                                        <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </span>
+                                Showroom
+                            </div>
+                    </li>
+                    <li id="mainNav_latestPatch" class>
+                        <div class="main-nav-corner">
+                            <svg class="element-style-svg">
+                                <polygon points="0 0 48 0 48 48"></polygon>
+                            </svg>
+                        </div>
+                        <div class="subMenuDropdown submenu-button" data-toggle="dropdown">
+                            <div class="subMenuContainer">
+                                <span class="mainN">
+                                    <svg height="1em" width="1.125em" version="1.1" viewBox="0 0 576 512" class="svg-icon main-navigation-icon">
+                                        <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </span>
+                                Latest Patch
+                            </div>
+                    </li>
+                    <li id="mainNav_drawing" class>
+                        <div class="main-nav-corner">
+                            <svg class="element-style-svg">
+                                <polygon points="0 0 48 0 48 48"></polygon>
+                            </svg>
+                        </div>
+                        <div class="subMenuDropdown submenu-button" data-toggle="dropdown">
+                            <div class="subMenuContainer">
+                                <span class="mainN">
+                                    <svg height="1em" width="1.125em" version="1.1" viewBox="0 0 576 512" class="svg-icon main-navigation-icon">
+                                        <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </span>
+                                Drawing
+                            </div>
+                    </li>
+                    <li id="mainNav_recipes" class>
+                        <div class="main-nav-corner">
+                            <svg class="element-style-svg">
+                                <polygon points="0 0 48 0 48 48"></polygon>
+                            </svg>
+                        </div>
+                        <div class="subMenuDropdown submenu-button" data-toggle="dropdown">
+                            <div class="subMenuContainer">
+                                <span class="mainN">
+                                    <svg height="1em" width="1.125em" version="1.1" viewBox="0 0 576 512" class="svg-icon main-navigation-icon">
+                                        <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </span>
+                                Recipes
+                            </div>
+                    </li>
+                    <li id="mainNav_store" class>
+                        <div class="main-nav-corner">
+                            <svg class="element-style-svg">
+                                <polygon points="0 0 48 0 48 48"></polygon>
+                            </svg>
+                        </div>
+                        <div class="subMenuDropdown submenu-button" data-toggle="dropdown">
+                            <div class="subMenuContainer">
+                                <span class="mainN">
+                                    <svg height="1em" width="1.125em" version="1.1" viewBox="0 0 576 512" class="svg-icon main-navigation-icon">
+                                        <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </span>
+                                Store
+                            </div>
+                    </li>
+                    <li id="mainNav_contact" class>
+                        <div class="main-nav-corner">
+                            <svg class="element-style-svg">
+                                <polygon points="0 0 48 0 48 48"></polygon>
+                            </svg>
+                        </div>
+                        <div class="subMenuDropdown submenu-button" data-toggle="dropdown">
+                            <div class="subMenuContainer">
+                                <span class="mainN">
+                                    <svg height="1em" width="1.125em" version="1.1" viewBox="0 0 576 512" class="svg-icon main-navigation-icon">
+                                        <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </span>
+                                Contact
+                            </div>
                     </li>
                 </ul>
             </div>
